@@ -57,7 +57,7 @@ const values = table.values();
 assertEqual(true, values.indexOf('levitates an object') !== -1, 'returns value at index with only one pair');
 assertEqual(true, values.indexOf('unforgivable') !== -1, 'returns all values at index with multiple pairs');
 assertEqual(true, values.indexOf('conjures dark mark') !== -1, 'returns all values at index with multiple pairs');
-assertEqual(26, values.length, 'returns correct number of keys with no extra spaces, no repeats');
+assertEqual(26, values.length, 'returns correct number of values with no extra spaces, no repeats');
 
 // If returning all values, including repeats
 //assertEqual(28, values.length, 'returns correct number of keys with no extra spaces');
