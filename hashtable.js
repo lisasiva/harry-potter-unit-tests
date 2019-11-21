@@ -1,4 +1,5 @@
-const HashTable = require('../hashtables/index');
+// TO DO: Replace with your own path
+const HashTable = require('./PATH/TO/HASHTABLE');
 const { assertEqual, assertArraysEqual } = require('./helpers');
 
 const table = new HashTable();
@@ -32,10 +33,11 @@ table.set('stupefy', 'stuns opponent');
 table.set('morsmorde', 'conjures dark mark');
 
 console.log('\nget(key)')
-assertArraysEqual('lights tip of wand', table.get('lumos'), 'returns correct pair from index with no collisions');
-assertArraysEqual('slows an advancing opponent', table.get('iMpedimEnta'), 'works with differently cased key');
-assertArraysEqual('conjures dark mark', table.get('morsmorde'), 'returns correct pair from index with collisions');
+assertEqual('lights tip of wand', table.get('lumos'), 'returns correct pair from index with no collisions');
+assertEqual('conjures dark mark', table.get('morsmorde'), 'returns correct pair from index with collisions');
 assertEqual(undefined, table.get('tarantallegra'), 'returns undefined if key is not found');
+//assertEqual('slows an advancing opponent', table.get('iMpedimEnta'), 'works with differently cased key');
+
 
 // Collisions:
 // 29 - crucio, morsmorde
